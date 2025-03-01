@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/profile"
+        android:id="@+id/profile_btn"
+        android:icon="@drawable/profile_logo"/>
+
+    <item
+        android:title="@string/about_us"
+        android:id="@+id/about_us_btn"
+        android:icon="@drawable/about_logo"/>
+    <item
+        android:title="@string/logout"
+        android:id="@+id/logout_btn"
+        android:icon="@drawable/logout_logo"/>
+</menu>

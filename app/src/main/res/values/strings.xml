@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">OpportuniTPO</string>
+    <string name="author_name_short">Vishwas</string>
+    <string name="author_name">Vishwas Vijay Vargiya</string>
+    <string name="app_des">For By To Drivers</string>
+    <string name="profile">Profile</string>
+    <string name="setting">Settings</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="about_us_content">We Drivers is a drivers helping application through which a driver who is not aware
+        of the location can contact with nearby drivers for the directions. This application also provides information about the nearby
+        workshops for vehicle assistance.</string>
+    <string name="queries_amp_feedback"><![CDATA[Queries & Feedback]]></string>
+    <string name="past_companies">Past Companies</string>
+    <string name="courses">Courses</string>
+    <string name="results">Results</string>
+    <string name="my_applications">My Applications</string>
+    <string name="upcoming_companies">Upcoming Companies</string>
+    <string name="hii">Hii</string>
+    <string name="register">REGISTER</string>
+    <string name="name">Name:</string>
+    <string name="e_mail">E-Mail:</string>
+    <string name="college_details">--College Details--</string>
+    <string name="roll_no">Roll No.:</string>
+    <string name="branch">Branch</string>
+    <string name="semester">Semester:</string>
+    <string name="educational_details">--Educational Details--</string>
+    <string name="xth_roll_no">Xth Roll No.</string>
+    <string name="xth_school">Xth School</string>
+    <string name="xth_percentage">Xth Percentage:</string>
+    <string name="xiith_percentage">XII Percentage</string>
+    <string name="xiith_school">XII School:</string>
+    <string name="xiith_roll_no">XII Roll No.</string>
+    <string name="mobile_no">Mobile No.:</string>
+    <string name="address">Address:</string>
+    <string name="password">Password:</string>
+    <string name="login_credentials">--Login Credentials--</string>
+    <string name="re_enter_password">Re-Enter Password:</string>
+    <string name="continue_btn">CONTINUE</string>
+    <string name="already_have_an_account">Already have an account!</string>
+    <string name="login_now">Login now!</string>
+
+</resources>

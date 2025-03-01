@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    android:background="@mipmap/main_background"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_window">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/main_window_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/user_name_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hii"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.025" />
+
+            <ImageButton
+                android:id="@+id/announcement_btn"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_35sdp"
+                android:background="@mipmap/announcements"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.127" />
+
+            <GridLayout
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:elevation="@dimen/_10sdp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/upcoming_companies_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/upcoming_companies"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.188"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.292" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/my_application_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/my_application"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.781"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.292" />
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/upcoming_companies"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.188"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.437" />
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/my_applications"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.789"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.441" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/results_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/results"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.182"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.591" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/courses_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/courses"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.780"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.591" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.229"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.681" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/courses"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.739"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.681" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/queries_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/query"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.182"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.865" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/past_companies_btn"
+                    android:layout_width="104dp"
+                    android:layout_height="97dp"
+                    android:elevation="@dimen/_50sdp"
+                    android:src="@mipmap/upcoming_companies"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.781"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintVertical_bias="0.865" />
+
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/queries_amp_feedback"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.182"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.974" />
+
+                <TextView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/past_companies"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.79"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_35sdp"
+                    app:layout_constraintVertical_bias="0.974" />
+
+            </GridLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

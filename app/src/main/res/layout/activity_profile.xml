@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/main_background"
+    tools:context=".UserProfile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:titleTextColor="@color/white"
+            app:title="@string/app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:src="@drawable/baseline_add_a_photo_24"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/_5sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_txt"
+                android:focusable="true"
+                android:textColor="@color/black"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/e_mail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/college_details"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/roll_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/roll_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/branch"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/semester"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/semester_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/educational_details"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/xth_roll_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_roll_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/xth_school"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/x_school_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="match_parent"
+                android:text="@string/xth_percentage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/x_percentage_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/xiith_roll_no"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xii_roll_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/xiith_school"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/xii_school_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/_111sdp"
+                android:layout_height="match_parent"
+                android:text="@string/xiith_percentage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/xii_percentage_txt"
+                android:textColor="@color/black"
+                android:focusable="true"
+                android:backgroundTint="#CDC3C3"
+                android:textSize="@dimen/_17sdp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:backgroundTint="@color/black"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+

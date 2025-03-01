@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    android:gravity="center_horizontal"
+    tools:context=".Login">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_marginTop="53dp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/card_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_30sdp" />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="@dimen/_5sdp"
+                    android:id="@+id/profile_img_registration"
+                    android:src="@drawable/baseline_add_a_photo_24"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name_txt_register"
+                        android:inputType="textPersonName"
+                        android:focusable="true"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/e_mail"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email_txt_register"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mobile_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="phone"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"
+                        tools:ignore="TextSizeCheck" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/address_txt_register"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/college_details"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/roll_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/roll_txt_register"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:inputType="textCapCharacters"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/branch"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/branch_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="textCapCharacters"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/semester"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/semester_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/educational_details"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xth_roll_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/x_roll_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="textCapCharacters"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xth_school"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/x_school_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="match_parent"
+                        android:text="@string/xth_percentage"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/x_percentage_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="numberDecimal"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xiith_roll_no"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/xii_roll_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="textCapCharacters"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xiith_school"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/xii_school_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="match_parent"
+                        android:text="@string/xiith_percentage"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/xii_percentage_txt_register"
+                        android:textColor="@color/black"
+                        android:inputType="numberDecimal"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_credentials"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/password_txt_register"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_111sdp"
+                        android:layout_height="@dimen/_56sdp"
+                        android:text="@string/re_enter_password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/re_password_txt_register"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:focusable="true"
+                        android:backgroundTint="#CDC3C3"
+                        android:textSize="@dimen/_17sdp"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_btn"
+                    android:id="@+id/register_btn"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textSize="@dimen/_20sdp"/>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/progress_registration"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_have_an_account"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_25sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"
+                    android:text="@string/login_now"
+                    android:gravity="center"
+                    android:id="@+id/login_btn_register"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="screen"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
